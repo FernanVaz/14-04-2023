@@ -1,0 +1,55 @@
+<H1>FORMULARIO</H1>
+  <label>
+    Marca:
+    <input type="text" [(ngModel)]="bicicleta.marca" name="marca">
+  </label>
+  <br>
+  <label>
+    Color:
+    <input type="text" [(ngModel)]="bicicleta.color" name="color">
+  </label>
+  <br>
+  <label>
+    Velocidad:
+    <input type="number" [(ngModel)]="bicicleta.velocidad" name="velocidad">
+  </label>
+  <br>
+  <label>
+    Piñones:
+    <input type="number" [(ngModel)]="bicicleta.piniones" name="piñones">
+  </label>
+  <br>
+  <label>
+    Platos:
+    <input type="number" [(ngModel)]="bicicleta.platos" name="platos">
+  </label>
+  <br>
+  <label>
+    Eléctrica:
+    <input type="checkbox" [(ngModel)]="bicicleta.electrica" name="electrica">
+  </label>
+  <br>
+  <H1>MODIFICAR VELOCIDADES</H1>
+  <label>
+    velocidad:
+    <input type="number" [(ngModel)]="velociadad2">
+  </label>
+  <br>
+  <label>
+    Aumentar velocidad:
+    <input type="radio" [(ngModel)]="fn" value="au">
+  </label>
+  <label>
+    Disminuir velocidad:
+    <input type="radio" [(ngModel)]="fn" value="ds">
+  </label>
+  <br>
+  <button type="submit" (click)="modificar()">modificar</button>
+<br><br><br><br>
+<H1>IMPRIMIR INFORMACION</H1>
+<p>Marca de la bicicleta: {{ bicicleta.marca }}</p>
+<p>Color de la bicicleta: {{ bicicleta.color }}</p>
+<p>Velocidad de la bicicleta: {{ bicicleta.velocidad }}</p>
+<p>Pioniones de la bicicleta: {{ bicicleta.piniones }}</p>
+<p>Platos de la bicicleta: {{ bicicleta.platos }}</p>
+<p>Bicicleta eléctrica: {{ bicicleta.electrica ? 'Sí' : 'No' }}</p>
